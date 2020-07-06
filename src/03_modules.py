@@ -30,8 +30,8 @@ import os
 # Print the current process ID
 # YOUR CODE HERE
 
-# pid=0
-# print(os.getpgid(pid))
+pid=0
+print(os.getpgid(pid))
 
 # Print the current working directory (cwd):
 # YOUR CODE HERE

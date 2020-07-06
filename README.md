@@ -1,3 +1,8 @@
+incomplete
+
+05_lists
+06_tuples
+
 # Intro to Python I
 
 It's time to learn a new language! Python!
