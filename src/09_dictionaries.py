@@ -52,5 +52,8 @@ print(waypoints)
 # YOUR CODE HERE
 waypoints[0].update({"lon": -130, "name":"not a real place"})
 print(waypoints)
+
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for coordinates in waypoints:
+    print(f"lat:, {coordinates['lat']}, lon:, {coordinates['lon']}")
