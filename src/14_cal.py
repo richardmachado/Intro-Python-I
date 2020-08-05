@@ -16,11 +16,11 @@ and does the following:
  - Otherwise, print a usage statement to the terminal indicating
    the format that your program expects arguments to be given.
    Then exit the program.
-Note: the user should provide argument input (in the initial call to run the file) and not 
+Note: the user should provide argument input (in the initial call to run the file) and not
 prompted input. Also, the brackets around year are to denote that the argument is
 optional, as this is a common convention in documentation.
-This would mean that from the command line you would call `python3 14_cal.py 4 2015` to 
-print out a calendar for April in 2015, but if you omit either the year or both values, 
+This would mean that from the command line you would call `python3 14_cal.py 4 2015` to
+print out a calendar for April in 2015, but if you omit either the year or both values,
 it should use today’s date to get the month and year.
 """
 
@@ -44,7 +44,7 @@ from datetime import datetime
 
 # Puts today's date on the today variable
 today = datetime.now()
-
+# print(datetime.now())
 
 def new_calendar():
     # Month/year are initially assigned to today's, to be replaced with user input
@@ -66,7 +66,9 @@ def new_calendar():
     # Else if there is only 1 system argument (file):
     # Default to current month and year
     else:
-        create_calender()
+        # create_calender()
+        print('wrong usage cal.py [month] [year]')
+        sys.exit(1)
 
 
 new_calendar()

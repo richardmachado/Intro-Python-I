@@ -12,6 +12,8 @@ import sys
 # YOUR CODE HERE
 
 print('SYS.argv', sys.argv[0])
+for arg in sys.argv:
+    print(arg)
 
 
 
